@@ -4,70 +4,6 @@
   <meta charset="UTF-8">
   <title>Enhanced Form</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 20px;
-      background: #f9f9f9;
-      color: #333;
-    }
-    header, main, footer {
-      max-width: 800px;
-      margin: auto;
-    }
-    header h1 {
-      text-align: center;
-      color: #005f73;
-    }
-    fieldset {
-      border: 2px solid #005f73;
-      padding: 15px;
-      margin-bottom: 20px;
-      border-radius: 8px;
-    }
-    legend {
-      font-weight: bold;
-      color: #005f73;
-    }
-    label {
-      display: block;
-      margin-top: 10px;
-    }
-    input, select, textarea {
-      width: 100%;
-      padding: 8px;
-      margin-top: 5px;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-    }
-    table {
-      border-collapse: collapse;
-      width: 100%;
-      margin: 20px 0;
-    }
-    table, th, td {
-      border: 1px solid #999;
-    }
-    th, td {
-      padding: 8px;
-      text-align: center;
-    }
-    .media {
-      text-align: center;
-      margin: 20px 0;
-    }
-    .submit-btn {
-      background: #0a9396;
-      color: white;
-      padding: 10px 15px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-    .submit-btn:hover {
-      background: #005f73;
-    }
-  </style>
 </head>
 <body>
 
@@ -77,11 +13,22 @@
 </header>
 
 <main>
- 
+  <!-- Example of well-structured content -->
+  <section>
+    <h2>Features of This Form</h2>
+    <ul>
+      <li>Uses semantic HTML5 structure</li>
+      <li>Includes validation with <code>required</code> attributes</li>
+      <li>Demonstrates <code>placeholder</code>, <code>autocomplete</code>, and <code>readonly</code></li>
+      <li>Contains media (image & audio)</li>
+      <li>Uses tables for structured data</li>
+    </ul>
+  </section>
+
   <!-- Example table -->
   <section>
     <h2>Available Courses</h2>
-    <table>
+    <table border="1">
       <tr>
         <th>Course</th>
         <th>Duration</th>
@@ -106,7 +53,7 @@
   </section>
 
   <!-- Media -->
-  <section class="media">
+  <section>
     <h2>Media Example</h2>
     <img src="https://via.placeholder.com/400x200" alt="Placeholder Image">
     <br><br>
@@ -123,31 +70,31 @@
       <fieldset>
         <legend>Personal Information</legend>
         <label for="fullname">Full Name*:</label>
-        <input type="text" id="fullname" name="fullname" placeholder="John Doe" required>
+        <input type="text" id="fullname" name="fullname" placeholder="John Doe" required><br><br>
 
         <label for="email">Email*:</label>
-        <input type="email" id="email" name="email" placeholder="example@email.com" required>
+        <input type="email" id="email" name="email" placeholder="example@email.com" required><br><br>
 
         <label for="phone">Phone Number:</label>
-        <input type="tel" id="phone" name="phone" placeholder="+1234567890">
+        <input type="tel" id="phone" name="phone" placeholder="+1234567890"><br><br>
 
         <label for="dob">Date of Birth*:</label>
-        <input type="date" id="dob" name="dob" required>
+        <input type="date" id="dob" name="dob" required><br><br>
       </fieldset>
 
       <fieldset>
         <legend>Account Details</legend>
         <label for="username">Username*:</label>
-        <input type="text" id="username" name="username" required>
+        <input type="text" id="username" name="username" required><br><br>
 
         <label for="password">Password*:</label>
-        <input type="password" id="password" name="password" required>
+        <input type="password" id="password" name="password" required><br><br>
 
         <label for="confirm-password">Confirm Password*:</label>
-        <input type="password" id="confirm-password" name="confirm-password" required>
+        <input type="password" id="confirm-password" name="confirm-password" required><br><br>
 
         <label for="readonly-example">Referral Code (Readonly Example):</label>
-        <input type="text" id="readonly-example" value="ABC123" readonly>
+        <input type="text" id="readonly-example" value="ABC123" readonly><br><br>
       </fieldset>
 
       <fieldset>
@@ -158,26 +105,22 @@
           <option value="webdev">Web Development</option>
           <option value="datasci">Data Science</option>
           <option value="cybersec">Cybersecurity</option>
-        </select>
+        </select><br><br>
 
-        <label>Preferred Study Mode:</label>
+        <label>Preferred Study Mode:</label><br>
         <input type="radio" id="online" name="mode" value="online" required>
-        <label for="online">Online</label>
+        <label for="online">Online</label><br>
         <input type="radio" id="offline" name="mode" value="offline">
-        <label for="offline">Offline</label>
+        <label for="offline">Offline</label><br><br>
 
-        <label for="comments">Additional Comments:</label>
-        <textarea id="comments" name="comments" placeholder="Write your comments here..."></textarea>
+        <label for="comments">Additional Comments:</label><br>
+        <textarea id="comments" name="comments" placeholder="Write your comments here..."></textarea><br><br>
       </fieldset>
 
-      <button type="submit" class="submit-btn">Submit</button>
+      <button type="submit">Submit</button>
     </form>
   </section>
 </main>
-
-<footer>
-  <p style="text-align:center;">&copy; 2025 Enhanced Form Example</p>
-</footer>
 
 </body>
 </html>
